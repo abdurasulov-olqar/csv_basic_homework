@@ -8,8 +8,8 @@ def get_first_column(data):
     """
     data = data.split('\n')
     first_column = []
-    for i in data:
-        first_column.append(i.split(',')[0])
+    for i in data[1:]:
+        first_column.append(i.split(','))
 
 
     return first_column
