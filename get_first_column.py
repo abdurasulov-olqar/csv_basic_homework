@@ -8,11 +8,11 @@ def get_first_column(data):
     """
     data = data.split('\n')
     first_column = []
-    for i in data[1:]:
-        first_column.append(i.split(','))
+    for i in data:
+        first_column.append(i.split(',')[0])
 
 
-    return first_column
+    return first_column[0:-1]
 
 f = open('data.csv').read()
 print(get_first_column(f))
