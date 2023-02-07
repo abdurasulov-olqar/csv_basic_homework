@@ -8,8 +8,8 @@ def find_number_of_rows(data):
     """
     data = data.split('\n')
 
-    return len(data)
-    
+    return len(data)-1
+
 f = open('data.csv').read()
 print(find_number_of_rows(f))
 # Read the csv file
